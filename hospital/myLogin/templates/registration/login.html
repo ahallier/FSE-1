@@ -1,0 +1,17 @@
+<p>
+<form method="post" action = "{% url 'lpage'  %}">
+
+{% csrf_token %}
+
+<p>
+<p>
+{{form.username}}
+</p>
+<p>
+{{form.password}}
+</p>
+
+<input type="submit" value="login"/>
+<input type = "hidden" name = "next" value = "{{next}}" /> 
+</form>
+
